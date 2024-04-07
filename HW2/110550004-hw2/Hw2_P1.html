@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>I am 110550004</title>
+    <style>
+      body {background: lightblue;}
+      footer {
+        display: block;
+        clear: both;
+        text-align: left;
+        background: linear-gradient(to right, yellow, lightgreen);
+      }
+      legend {
+        color: red;
+      }
+      li {
+        margin-top: 10px;
+      }
+      select {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <img src="mchackathon11th-51ee2291-86f3-4011-a5ac-243c08af2912.jpg" alt="img" style="width: 24px; height: auto; display: block; float: left;">
+        <h2 style="color: black;">個人小檔案(表單版_Form)_Hw#02-P1</h2>
+    </header>
+    <main>
+      <form method="POST" action="mailto:mason1719.cs10@nycu.edu.tw">
+        <section style="border-bottom: 1px groove gray; margin-bottom: 5px;">
+        <fieldset style="margin-bottom: 6px;">
+          <legend>個人基本資料</legend>
+          <div>
+            <label>姓名: </label>
+            <input type="text" aria-label="name" />
+          </div>
+          <div>
+            <label>學號: </label>
+            <input type="text" aria-label="id" />
+          </div>
+          <div>
+            <label>科系: </label>
+            <input type="radio" name="educationLevel" aria-label="first" id="first"/>
+            <label for="first">大一</label>
+        
+            <input type="radio" name="educationLevel" aria-label="second" id="second"/>
+            <label for="second">大二</label>
+        
+            <input type="radio" name="educationLevel" aria-label="third" id="third" checked/>
+            <label for="third">大三</label>
+        
+            <input type="radio" name="educationLevel" aria-label="fourth" id="fourth"/>
+            <label for="fourth">大四</label>
+        
+            <input type="radio" name="educationLevel" aria-label="above" id="above"/>
+            <label for="above">延畢</label>
+        
+            <input type="radio" name="educationLevel" aria-label="graduate" id="graduate"/>
+            <label for="graduate">研究所以上</label>
+          </div>      
+        </fieldset>
+        </section>
+
+        <section style="border-bottom: 1px groove gray; margin-bottom: 5px;">
+        <fieldset style="margin-bottom: 6px;">
+          <legend>其他資訊</legend>
+          <ol>
+            <li>興趣(愛好)--平時休閒時，你最喜歡下列哪些活動(可複選)?</li>
+            <div>
+              <input type="checkbox" name="educationLevel" aria-label="first" id="read" checked/>
+              <label for="read">閱讀</label>
+          
+              <input type="checkbox" name="educationLevel" aria-label="second" id="sport"/>
+              <label for="sport">打球/體能鍛鍊</label>
+          
+              <input type="checkbox" name="educationLevel" aria-label="third" id="shopping"/>
+              <label for="shopping">逛街</label>
+          
+              <input type="checkbox" name="educationLevel" aria-label="fourth" id="music"/>
+              <label for="music">聽音樂</label>
+            </div>
+
+            <li>系統工具--本學期的幾次作業，你使用過那些瀏覽器程式(可複選)?</li>
+            <select multiple size="3">
+              <option selected>Google Chrome</option>
+              <option>Mozilla Fox</option>
+              <option>Microsoft Edge</option>
+              <option>mac Safari</option>
+            </select>
+            <p>* 操作提示(複選適用於 Windows 系統等): 移動滑鼠指標(pointer)到指定鍵盤的CTRL鍵 + 滑鼠左鍵</p>
+
+            <li>遭遇問題--有關進行中的學期專案，簡單描述你碰過哪些問題?</li>
+            <textarea id="txtid" name="txtname" rows="5" cols="40">1. 選定專案主題
+2...</textarea>
+
+            <li>
+              本次作業，你的繳交時間:
+              <input type="datetime-local" id="submit-time" name="submit-time" aria-label="submit-time" min="2024-03-26T00:00" max="2024-04-14T23:59">
+            </li>
+          </ul>
+        </fieldset>
+        <input type="submit" aria-label="submit" value="提交">
+        <input type="reset" aria-label="reset" value="重新輸入"> <br/><br/>
+        <input type="button" aria-label="Enter your input" style="color:red; margin-bottom: 6px;" value="回到前一頁 (back to previous page)" onclick="history.back()"> <br/>
+        </section>
+      </form>
+    </main>
+    
+    <footer style="width: 100%;">
+      <p style="color: blue;">Hw#2_摘要資訊(Summary Information of Hw#2)</p>
+      <ul>
+        <li>內容: P1_HTML_Form + P2_HTML_Table</li>
+        <li>繳交期限: 2024.04.07 (週日)</li>
+      </ul>
+    </footer>
+  </body>
+</html>
